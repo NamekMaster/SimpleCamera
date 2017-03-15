@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="aspect_16_9" format="float" type="dimen">1.7778</item>
+    <item name="aspect_4_3" format="float" type="dimen">1.3333</item>
+    <item name="aspect_3_4" format="float" type="dimen">0.75</item>
+
+</resources>

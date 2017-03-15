@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.github.namekmaster.simplecamera.widget.AspectRatioView
+        android:id="@+id/preview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:aspectRatio="@dimen/aspect_3_4">
+
+        <io.github.namekmaster.simplecamera.widget.CameraPreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/video_recording_time_text"
+            style="@style/OnViewfinderLabel"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            tool:text="10:11"
+            tool:visibility="visible" />
+
+        <ToggleButton
+            android:id="@+id/flashMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_flash_mode"
+            android:textOff=""
+            android:textOn="" />
+
+    </io.github.namekmaster.simplecamera.widget.AspectRatioView>
+
+    <ImageButton
+        android:id="@+id/capture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/btn_shutter_video"
+        android:enabled="false" />
+
+</FrameLayout>
